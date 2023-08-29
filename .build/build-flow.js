@@ -15,7 +15,7 @@ const tasks = {
       cmds.push(`npm version "${version}"`);
     }
 
-    cmds.push('npm build');
+    cmds.push('npm run build');
 
     return cmds.join(' && ');
   },
